@@ -6,7 +6,7 @@ Professional workflow system for Claude Code with universal slash commands and i
 
 **Instead of manual installation, point Claude Code to this GitHub repository and ask it to discuss and set up the system for you. This is much faster and ensures proper configuration.**
 
-Example: *"Please review the CCCT repository at [this-repo-url], discuss what it does, and set it up for me."*
+Example: *"Please review the CCCT repository at https://github.com/IgorWarzocha/CCCT, discuss what it does, and set it up for me."*
 
 ---
 
@@ -53,14 +53,18 @@ cp commands/*.md .claude/commands/
 
 ## Workflow Overview
 
-```mermaid
-graph TD
-    A[/setup] --> B[/explore]
-    B --> C[/prd feature-name]
-    C --> D[/todo feature-name]
-    D --> E[/dev specific-issues]
-    E --> F[/review code]
+**Professional Development Chain:**
 ```
+/setup → /explore → /prd [feature] → /todo [task] → /dev [issues] → /review
+```
+
+**Step-by-step:**
+1. **`/setup`** - Initialize project with CLAUDE.md and templates
+2. **`/explore`** - Deep codebase analysis and documentation
+3. **`/prd [feature]`** - Research-driven requirements creation
+4. **`/todo [task]`** - Task execution with complexity analysis
+5. **`/dev [issues]`** - TDD workflow with GitHub integration  
+6. **`/review`** - Structured code review process
 
 ## Key Features
 
